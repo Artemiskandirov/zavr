@@ -45,7 +45,7 @@ h1,h2,h3,h4,p{margin:0}
 .phone.duel .scroll{overflow:hidden}
 
 /* ---------- 3D hero ---------- */
-.hero{position:relative;height:700px;background:var(--night);overflow:hidden;color:#fff;transition:height .7s cubic-bezier(.32,.72,0,1)}
+.hero{position:relative;height:620px;background:var(--night);overflow:hidden;color:#fff;transition:height .7s cubic-bezier(.32,.72,0,1)}
 .phone.duel .hero{height:var(--ph,844px)}
 .hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
 .hero .shade{position:absolute;inset:auto 0 0;height:380px;background:linear-gradient(rgba(15,22,54,0),rgba(15,22,54,.55) 35%,rgba(15,22,54,.88));pointer-events:none;transition:opacity .5s}
@@ -57,7 +57,7 @@ h1,h2,h3,h4,p{margin:0}
 .phone.duel .shade{opacity:.35}
 .hero-top{position:absolute;top:calc(var(--sb) + 22px);left:20px;right:16px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 .left-cap{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.04em;font:700 15px/18px var(--ds)}
-.hero h1{font:700 34px/38px var(--ds);margin-top:10px;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.hero h1{font:700 30px/34px var(--ds);margin-top:8px;text-shadow:0 2px 12px rgba(0,0,0,.35)}
 .icon-btn{width:44px;height:44px;border-radius:16px;display:grid;place-items:center;background:rgba(255,255,255,.16);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);flex:none}
 .icon-btn .off{display:none}
 .chest-btn{width:auto;padding:0 14px 0 10px;gap:4px;display:flex;align-items:center;font:700 15px/1 var(--ds);color:#fff}
@@ -71,26 +71,26 @@ h1,h2,h3,h4,p{margin:0}
 .flash-ov{position:absolute;inset:0;z-index:8;opacity:0;pointer-events:none;mix-blend-mode:screen}
 .muted-snd .icon-btn .on{display:none}
 .muted-snd .icon-btn .off{display:block}
-.bottom-stack{position:absolute;left:16px;right:16px;bottom:18px;display:flex;flex-direction:column;gap:12px}
-.goal{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:16px 16px 16px 18px;border-radius:28px;background:var(--glass);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
-.goal h3{font:700 20px/24px var(--ds);text-wrap:balance}
+.bottom-stack{position:absolute;left:16px;right:16px;bottom:14px;display:flex;flex-direction:column;gap:10px}
+.goal{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:12px 12px 12px 16px;border-radius:24px;background:var(--glass);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.goal h3{font:700 16px/20px var(--ds);text-wrap:balance}
 .pb{position:relative;height:20px;border-radius:999px;background:var(--progress-track);overflow:hidden}
 .pb.s{height:8px}
 .pb i{position:absolute;inset:0 auto 0 0;border-radius:999px;background:var(--progress-indicator);transition:width .6s cubic-bezier(.32,.72,0,1)}
 .pb span{position:absolute;inset:0;display:grid;place-items:center;font:700 13px/14px var(--ds);color:#fff;z-index:1;font-variant-numeric:tabular-nums}
-.goal .pb{margin-top:12px;--progress-track:rgba(255,255,255,.18)}
-.hpchip{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:76px}
-.hpchip .ring{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--p-chili-red) calc(var(--hp)*1%),rgba(255,255,255,.15) 0);transition:--hp .6s}
-.hpchip .ring b{width:50px;height:50px;border-radius:50%;background:#1a2150;display:grid;place-items:center;font:700 17px/1 var(--ds);font-variant-numeric:tabular-nums}
+.goal .pb{margin-top:10px;--progress-track:rgba(255,255,255,.18)}
+.hpchip{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:64px}
+.hpchip .ring{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--p-chili-red) calc(var(--hp)*1%),rgba(255,255,255,.15) 0);transition:--hp .6s}
+.hpchip .ring b{width:40px;height:40px;border-radius:50%;background:#1a2150;display:grid;place-items:center;font:700 15px/1 var(--ds);font-variant-numeric:tabular-nums}
 .hpchip span{font:700 11px/14px var(--ds);opacity:.75;text-transform:uppercase;letter-spacing:.04em}
 .tiles{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:4px 16px}
 .tiles::-webkit-scrollbar{display:none}
-.tile{position:relative;flex:none;width:72px;height:86px;border-radius:24px;background:#fff;color:var(--p-space-cadet);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font:700 15px/1 var(--ds);font-variant-numeric:tabular-nums;transition:transform .15s,box-shadow .3s}
+.tile{position:relative;flex:none;width:64px;height:78px;border-radius:22px;background:#fff;color:var(--p-space-cadet);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font:700 15px/1 var(--ds);font-variant-numeric:tabular-nums;transition:transform .15s,box-shadow .3s}
 .tile:active{transform:scale(.94)}
-.tile img{width:46px;height:46px;border-radius:12px}
+.tile img{width:40px;height:40px;border-radius:11px}
 .tile.done{background:rgba(255,255,255,.22);box-shadow:inset 0 0 0 3px var(--p-lime-green)}
 .tile.done img{opacity:.55}
-.tile .ok{position:absolute;left:50%;top:44px;width:34px;height:34px;margin-left:-17px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.tile .ok{position:absolute;left:50%;top:40px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.2)}
 .tile.done .count{visibility:hidden}
 .tile.pulse{animation:tpulse .6s ease}
 @keyframes tpulse{40%{transform:scale(1.12)}}
@@ -99,14 +99,14 @@ h1,h2,h3,h4,p{margin:0}
 .b-brand{background:var(--p-bright-pink);color:#fff}
 .b-white{background:#fff;color:var(--p-space-cadet)}
 .b-ghost{background:rgba(255,255,255,.14);color:#fff}
-.duel-btn{box-shadow:0 10px 24px -8px rgba(255,97,112,.7);animation:glow 2.2s infinite}
+.duel-btn{height:52px;box-shadow:0 10px 24px -8px rgba(255,97,112,.7);animation:glow 2.2s infinite}
 @keyframes glow{50%{box-shadow:0 10px 30px -4px rgba(255,97,112,1)}}
 .duel-btn small{font:400 13px/1 var(--ds);opacity:.85}
 
 /* subtitles / voice bubble */
 .say{position:absolute;z-index:5;max-width:230px;padding:10px 14px;border-radius:18px 18px 18px 6px;background:#fff;color:var(--p-space-cadet);font:700 15px/19px var(--ds);box-shadow:0 10px 24px rgba(0,0,0,.3);transform:translate(-8px,-100%);pointer-events:none;transition:opacity .25s,transform .25s}
 .say.off{opacity:0;transform:translate(-8px,calc(-100% + 8px))}
-.say::before{content:"ЗАВР";display:block;font:700 11px/14px var(--ds);letter-spacing:.06em;color:var(--p-majorelle-blue);margin-bottom:2px}
+.say::before{content:attr(data-who);display:block;font:700 11px/14px var(--ds);letter-spacing:.06em;color:var(--p-majorelle-blue);margin-bottom:2px}
 
 /* duel HUD */
 .ov.duelui{opacity:0;pointer-events:none}
@@ -168,24 +168,25 @@ h1,h2,h3,h4,p{margin:0}
 .egg-i{width:26px;height:26px}
 
 /* ---------- light content (as in the app) ---------- */
-.content{padding:28px 16px 24px;display:flex;flex-direction:column;gap:16px;background:var(--background-primary)}
-.content h2.sec{font:700 30px/34px var(--ds);margin:0 4px}
-.special{border-radius:32px;background:var(--surface);padding:12px 12px 16px}
+.content{padding:24px 16px 24px;display:flex;flex-direction:column;gap:12px;background:var(--background-primary)}
+.content h2.sec{font:700 26px/30px var(--ds);margin:0 4px 2px}
+.special{border-radius:28px;background:var(--surface);padding:10px 10px 14px}
 .special .bn{width:100%;border-radius:22px}
 .special .row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:12px 6px 10px}
-.special .row p{color:var(--content-secondary);font:400 17px/20px var(--ds);margin-top:4px}
-.special .row img{width:96px}
-.daily-h{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;margin-top:20px}
+.special .row p{color:var(--content-secondary);font:400 15px/19px var(--ds);margin-top:4px}
+.special .row img{width:80px}
+.daily-h{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;margin-top:16px}
 .daily-h .cap{display:flex;gap:8px;align-items:center;color:var(--content-secondary);text-transform:uppercase;letter-spacing:.04em;font:700 15px/18px var(--ds)}
-.daily-h h2{font:700 30px/34px var(--ds);margin:10px 0 12px}
-.daily-h img{width:92px;margin-right:-6px}
-.qcard{display:grid;grid-template-columns:48px 1fr 68px;gap:12px;align-items:center;padding:18px 16px;border-radius:32px;background:var(--surface);text-align:left;width:100%}
-.qcard .ic{width:48px;height:48px;border-radius:14px}
-.qcard h4{font:700 17px/21px var(--ds);margin-bottom:8px;text-wrap:balance}
+.daily-h h2{font:700 26px/30px var(--ds);margin:8px 0 12px}
+.daily-h img{width:80px;margin-right:-4px}
+.qcard{display:grid;grid-template-columns:44px 1fr 58px;gap:12px;align-items:center;padding:16px 14px 16px 16px;border-radius:28px;transition:transform .15s;background:var(--surface);text-align:left;width:100%}
+.qcard:active{transform:scale(.98)}
+.qcard .ic{width:44px;height:44px;border-radius:13px}
+.qcard h4{font:700 16px/20px var(--ds);margin-bottom:8px;text-wrap:balance}
 .qcard .pb{--progress-track:rgba(47,47,69,.15)}
 .qcard .pb span{color:#fff}
 .qcard .pb.zero span{color:rgba(47,47,69,.35)}
-.qcard .art{width:68px;justify-self:end}
+.qcard .art{width:58px;justify-self:end}
 
 /* tab bar (app icons) */
 .tabbar{position:absolute;inset:auto 0 0;z-index:30;background:#fff;display:flex;flex-direction:column;transition:transform .5s cubic-bezier(.32,.72,0,1)}
@@ -234,7 +235,7 @@ h1,h2,h3,h4,p{margin:0}
       <canvas id="cv"></canvas>
       <div class="loading" id="loading">Завр поднимается на башню…</div>
       <div class="shade-top"></div><div class="shade"></div>
-      <div class="say off" id="say"></div>
+      <div class="say off" id="say" data-who="ЗАВР"></div>
       <div class="cine-bars"></div><div class="cine-cap" id="cineCap"></div><div class="flash-ov" id="flashOv"></div>
 
       <div class="ov home">
@@ -255,7 +256,7 @@ h1,h2,h3,h4,p{margin:0}
             <div class="hpchip"><div class="ring" id="hpRing" style="--hp:76"><b id="hpRingT">76</b></div><span>HP Завра</span></div>
           </div>
           <div class="tiles" id="tiles"></div>
-          <button class="btn-l b-brand duel-btn" id="duelBtn">Сразиться 1 на 1</button>
+          <button class="btn-l b-brand duel-btn" id="duelBtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M4 4l10 10M14 14l3 3M17 14l-3 3M20 4L10 14M10 14l-3 3M7 14l3 3"/></svg>Сразиться 1 на 1</button>
         </div>
       </div>
 
@@ -269,7 +270,7 @@ h1,h2,h3,h4,p{margin:0}
         </div>
         <div id="bannerSlot" class="fx"></div>
         <div class="q-card away" id="qCard">
-          <div class="q-step"><span class="t-cb" id="qStep">Фаза 1 · Сложение и вычитание</span><span style="display:flex;gap:6px"><span class="label combo" id="qCombo" hidden>Комбо ×3</span><span class="label" id="qDmg">Удар −12</span></span></div>
+          <div class="q-step"><span class="t-cb" id="qStep">Фаза 1 · Сложение и вычитание</span><span style="display:flex;gap:6px"><span class="label combo" id="qCombo" hidden>Комбо ×3</span><span class="label" id="qDmg">Удар −8</span></span></div>
           <div class="pb s timer" id="qTimer" hidden><i style="width:100%"></i></div>
           <div class="q-text" id="qText">7 × 8 = ?</div>
           <div class="opts" id="opts"></div>
@@ -284,20 +285,20 @@ h1,h2,h3,h4,p{margin:0}
       <div class="special">
         <img class="bn" src="assets/banner.png" alt="Марафон по программированию 2: участвуй и выиграй MacBook Air">
         <div class="row"><div><div class="t-h2">Ждём на занятии</div><p>После посещения станешь участником розыгрыша</p></div><img src="assets/chest100.png" alt="100 яиц"></div>
-        <div class="pb" style="height:44px;margin:0 6px"><i style="width:60%"></i><span style="font-size:17px">Ждём на занятии</span></div>
+        <div class="pb" style="height:36px;margin:0 6px"><i style="width:60%"></i><span style="font-size:15px">Ждём на занятии</span></div>
       </div>
 
       <div class="daily-h">
         <div>
           <div class="cap"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="8"/><path d="M10 5.5V10l3 2"/></svg>Осталось 7 часов</div>
           <h2>Выполни всё за день</h2>
-          <div class="pb" style="height:44px"><i id="dayB" style="width:33%"></i><span id="dayP" style="font-size:17px">1 / 3</span></div>
+          <div class="pb" style="height:36px"><i id="dayB" style="width:33%"></i><span id="dayP" style="font-size:15px">1 / 3</span></div>
         </div>
         <img src="assets/bolt_big.png" alt="15 молний">
       </div>
-      <button class="qcard" data-daily="0"><img class="ic" src="assets/s_math.png" alt=""><span><h4>Решить 14 заданий в карточках по математике</h4><span class="pb" style="display:block;height:30px"><i style="width:93%" id="d0b"></i><span id="d0p" style="font-size:17px">13 / 14</span></span></span><img class="art" src="assets/bolt_sm.png" alt="4 молнии"></button>
-      <button class="qcard" data-daily="1"><img class="ic" src="assets/s_nature.png" alt=""><span><h4>Решить 3 карточки по окружающему миру</h4><span class="pb zero" style="display:block;height:30px"><i style="width:0%" id="d1b"></i><span id="d1p" style="font-size:17px">0 / 3</span></span></span><img class="art" src="assets/dino_hi.png" alt=""></button>
-      <button class="qcard"><img class="ic" src="assets/target.png" alt=""><span><h4>Заработать 3 монеты</h4><span class="pb" style="display:block;height:30px"><i style="width:100%"></i><span style="font-size:17px">3 / 3</span></span></span><img class="art" src="assets/dino_girl.png" alt=""></button>
+      <button class="qcard" data-daily="0"><img class="ic" src="assets/s_math.png" alt=""><span><h4>Решить 14 заданий в карточках по математике</h4><span class="pb" style="display:block;height:26px"><i style="width:93%" id="d0b"></i><span id="d0p" style="font-size:15px">13 / 14</span></span></span><img class="art" src="assets/bolt_sm.png" alt="4 молнии"></button>
+      <button class="qcard" data-daily="1"><img class="ic" src="assets/s_nature.png" alt=""><span><h4>Решить 3 карточки по окружающему миру</h4><span class="pb zero" style="display:block;height:26px"><i style="width:0%" id="d1b"></i><span id="d1p" style="font-size:15px">0 / 3</span></span></span><img class="art" src="assets/dino_hi.png" alt=""></button>
+      <button class="qcard"><img class="ic" src="assets/target.png" alt=""><span><h4>Заработать 3 монеты</h4><span class="pb" style="display:block;height:26px"><i style="width:100%"></i><span style="font-size:15px">3 / 3</span></span></span><img class="art" src="assets/dino_girl.png" alt=""></button>
     </div>
   </div>
 
@@ -342,7 +343,7 @@ const MQ={english:[['Как по-английски «кошка»?',['cat','dog
  it:[['Сколько бит в одном байте?',['8','10','2'],0],['Что делает цикл?',['повторяет команды','удаляет файлы','рисует'],0],['Робот: 2 шага вперёд, 1 назад. Где он?',['на 1 шаг впереди','на старте','на 3 шага впереди'],0]],
  course:[['Продолжи: 2, 4, 6, 8, …',['10','9','12'],0],['Что лишнее: кот, пёс, стол, ёж',['стол','кот','ёж'],0],['Сколько углов у квадрата?',['4','3','5'],0],['У Маши 3 яблока, у Пети на 2 больше. Сколько у Пети?',['5','1','6'],0]],
  chess:[['Как ходит слон?',['по диагонали','буквой Г','на одну клетку'],0],['Какая фигура ходит буквой Г?',['конь','ладья','ферзь'],0],['Сколько клеток на доске?',['64','36','100'],0],['Какая фигура самая сильная?',['ферзь','пешка','король'],0]]};
-const DMG_MINI=8;
+const DMG_MINI=6;
 const S={hp:100,daily0:13,daily1:0,dailyDone:1};
 S.hp=100-MINI.filter(m=>m.done>=m.total).length*DMG_MINI;
 
@@ -398,6 +399,10 @@ const sfx={
   lose:()=>[392,330,262,196].forEach((f,i)=>tone(f,.4,{type:'triangle',vol:.16,delay:i*.2,wet:.4})),
   heal:()=>[784,988,1318,1568].forEach((f,i)=>tone(f,.4,{vol:.12,delay:i*.07,wet:.6})),
   tick:()=>tone(1600,.04,{type:'square',vol:.05,wet:.1}),
+  squawk:()=>{tone(1300,.12,{type:'square',vol:.07,to:2600,wet:.2});tone(2400,.16,{type:'sawtooth',vol:.05,to:1100,delay:.11,wet:.2});noise(.22,{vol:.07,freq:3000,type:'bandpass',q:3})},
+  boing:()=>{tone(260,.5,{vol:.2,to:620,wet:.2});tone(620,.45,{vol:.12,to:180,delay:.15,wet:.2})},
+  gulp:()=>{[0,.18,.36].forEach(d=>tone(420,.12,{vol:.18,to:180,delay:d,wet:.1}))},
+  shieldHit:()=>{tone(900,.5,{type:'triangle',vol:.18,to:880,wet:.5});noise(.15,{vol:.3,freq:5000,type:'highpass'})},
   stinger:()=>{[293,349,440,587].forEach((f,i)=>{tone(f,1.2,{type:'sawtooth',vol:.04,delay:i*.02,wet:.6});tone(f*1.005,1.2,{type:'sawtooth',vol:.04,delay:i*.02,wet:.6})});tone(73,1.4,{vol:.3,to:55,wet:.2})},
 };
 /* rain ambience */
@@ -419,7 +424,7 @@ const MUS={step:0,next:0,timer:null,intensity:0,
       if(s%2===1)noise(.04,{vol:this.intensity?.06:.03,freq:7000,type:'highpass',delay:d,bus:SND.musicBus});
       if(this.intensity===2&&s%8===7)tone(hz(this.bass[(s/2|0)%16]),spb,{type:'sawtooth',vol:.06,delay:d,bus:SND.musicBus});
       this.step++;this.next+=spb}}};
-document.addEventListener('pointerdown',e=>{const first=!SND.ctx;ac();if(first&&SND.on){startRain();MUS.start();setTimeout(()=>{VO.play('greet');setTimeout(()=>{if(!D.on&&!CH.played)CH.play()},(VO.lastDur||4000)+400)},250)}
+document.addEventListener('pointerdown',e=>{const first=!SND.ctx;ac();if(first&&SND.on){startRain();MUS.start();setTimeout(()=>{VO.play('greet');setTimeout(()=>{if(!D.on&&!CH.played&&S.hp>0)CH.play()},(VO.lastDur||4000)+400)},250)}
   const b=e.target.closest('button');if(b&&!b.matches('.opt,.sh-opt,.sndBtn,#duelBtn'))sfx.tap()},true);
 
 /* ================= VOICE-OVER =================
@@ -437,20 +442,25 @@ const LINES={
  phase2:'Ты меня разозлил! Теперь — умножение!',phase3:'Всё! Я в ярости! Посмотрим, успеешь ли ты!',
  win:'Не-е-ет! Ладно… сундук твой. Но я вернусь завтра!',lose:'Ха-ха! Тренируйся, юнга, и возвращайся!',
  flee:'Сбежал? Я так и знал!',
- chest:'Эй! Не подглядывай! Тут мои сокровища — сто яиц!',chest_lost:'Мои яйца! Мои драгоценные яйца!'};
+ chest:'Эй! Не подглядывай! Тут мои сокровища — сто яиц!',chest_lost:'Мои яйца! Мои драгоценные яйца!',
+ dizzy:'Ой-ой-ой… голова кружится!',tickle:'Хи-хи-хи! Щекотно!',hat:'Эй! Моя шляпа!',tail:'Ай! Не трогай хвост!',
+ count:'Так-так… девяносто восемь, девяносто девять… сто! Все на месте.',key:'Ключик от сундука — только у меня!',
+ angry:'Всё! Ты меня достал!',heal:'Ням! Подкрепился — плюс десять!',shield:'Ха! Сундук — лучший щит!',
+ sneaky:'Тс-с-с… никому не говори, где ключ.',quest_watch:'Эй! Ты что, задание решаешь?!',fast:'Ого, как быстро!',
+ parrot1:'Кар-р! Сто яиц! Сто яиц!',parrot2:'Завр жадина! Кар-р!',parrot3:'Реши задачку! Реши задачку!'};
 const VO={cur:null,files:{},
-  play(id,force){const text=LINES[id];if(!text)return 0;if(this.cur&&!force&&performance.now()<this.busyUntil)return 0;this.stop();
-    const dur=Math.max(1200,text.length*55);this.lastDur=dur;showSay(text,dur+600);Z.talk(dur/1000);this.busyUntil=performance.now()+dur*.7;
+  play(id,force,who){const text=LINES[id];if(!text)return 0;if(this.cur&&!force&&performance.now()<this.busyUntil)return 0;this.stop();
+    const dur=Math.max(1200,text.length*55);this.lastDur=dur;showSay(text,dur+600,who);if(!who)Z.talk(dur/1000);else if(Z.parState)Z.parState.talk=dur/1000;this.busyUntil=performance.now()+dur*.7;
     if(!SND.on)return dur;
     const a=new Audio((window.VOICE&&window.VOICE[id])||('voice/'+id+'.mp3'));this.cur=a;let fell=false;
     const fallback=()=>{if(fell||this.cur!==a)return;fell=true;this.tts(text)};
     a.addEventListener('error',fallback,{once:true});
-    a.addEventListener('loadedmetadata',()=>{if(isFinite(a.duration)){Z.talk(a.duration);showSay(text,a.duration*1000+500)}},{once:true});
+    a.addEventListener('loadedmetadata',()=>{if(isFinite(a.duration)){if(!who)Z.talk(a.duration);showSay(text,a.duration*1000+500,who)}},{once:true});
     a.play().catch(fallback);return dur},
   tts(text){try{const sy=window.speechSynthesis;if(!sy)return;sy.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='ru-RU';u.pitch=.55;u.rate=1.08;u.volume=.9;
     const v=sy.getVoices().find(v=>/^ru/i.test(v.lang));if(v)u.voice=v;sy.speak(u)}catch(e){}},
   stop(){if(this.cur){try{this.cur.pause()}catch(e){}this.cur=null}try{window.speechSynthesis&&window.speechSynthesis.cancel()}catch(e){}}};
-let sayT;function showSay(text,ms){const s=$('#say');s.textContent=text;s.classList.remove('off');clearTimeout(sayT);sayT=setTimeout(()=>s.classList.add('off'),ms)}
+let sayT;function showSay(text,ms,who){const s=$('#say');s.dataset.who=who?who.toUpperCase():'ЗАВР';Z.speaker=who?'parrot':'zavr';s.textContent=text;s.classList.remove('off');clearTimeout(sayT);sayT=setTimeout(()=>s.classList.add('off'),ms)}
 
 $$('.sndBtn').forEach(b=>b.onclick=()=>{SND.on=!SND.on;app.classList.toggle('muted-snd',!SND.on);if(!SND.on){stopRain();VO.stop();MUS.stop();if(SND.musicBus)SND.musicBus.gain.value=0}else{ac();startRain();MUS.start();MUS.setIntensity(D.on?(D.phase===2?2:1):0);sfx.tap()}toast(SND.on?'Звук и озвучка включены':'Звук выключен')});
 
@@ -466,11 +476,11 @@ function renderTiles(){
 }
 const sw=$('#sheetWrap'),sheet=$('#sheet');
 function openSheet(html){sheet.innerHTML='<div class="grab"></div>'+html;sw.classList.add('open')}
-function closeSheet(){sw.classList.remove('open')}
+function closeSheet(){sw.classList.remove('open');if(Z.ready)Z.lookOverride=null}
 sw.addEventListener('click',e=>{if(e.target===sw||e.target.classList.contains('grab'))closeSheet()});
 $('#tiles').addEventListener('click',e=>{const b=e.target.closest('[data-mini]');if(!b)return;const m=MINI.find(x=>x.id===b.dataset.mini);
   if(m.done>=m.total){toast(`${m.n}: мини-квест выполнен, Завр получил урон`);return}openMini(m)});
-function openMini(m){
+function openMini(m){if(Z.ready){Z.lookOverride=[0,1];setExpr('surprised',1.2);if(!openMini.said){openMini.said=1;VO.play('quest_watch',true)}}
   const bank=MQ[m.id]||MQ.course;const q=bank[m.done%bank.length];const order=shuffle(q[1].map((t,i)=>({t,ok:i===q[2]})));
   openSheet(`<div class="sh-head"><img src="${m.img}" alt=""><div><div class="t-h2">${m.n}</div><p class="t-sr">${m.sub} · ${m.done} из ${m.total}</p></div></div>
     <div class="pb" style="margin-bottom:14px"><i style="width:${m.done/m.total*100}%"></i><span>${m.done} / ${m.total}</span></div>
@@ -510,7 +520,7 @@ function canvasTex(w,h,draw){const c=document.createElement('canvas');c.width=w;
 function initScene(){
   T3=THREE;
   const cv=$('#cv');
-  const r=new T3.WebGLRenderer({canvas:cv,antialias:true,powerPreference:'high-performance'});r.setPixelRatio(Math.min(2,devicePixelRatio||1));r.shadowMap.enabled=true;r.shadowMap.type=T3.PCFSoftShadowMap;
+  const r=new T3.WebGLRenderer({canvas:cv,antialias:true,powerPreference:'high-performance'});r.setPixelRatio(Math.min(1.5,devicePixelRatio||1));r.shadowMap.enabled=true;r.shadowMap.type=T3.PCFSoftShadowMap;
   
   const sc=new T3.Scene();sc.fog=new T3.FogExp2(0x1a2452,.022);
   const cam=new T3.PerspectiveCamera(36,1,.1,400);
@@ -544,8 +554,8 @@ function initScene(){
   Z.sky=new T3.Mesh(new T3.SphereGeometry(200,32,16),skyMat);sc.add(Z.sky);
   const moon=G(sc,[-30,21,-62]);const mm=new T3.Mesh(new T3.SphereGeometry(3.2,32,16),new T3.MeshBasicMaterial({color:0xfff3c9,fog:false}));moon.add(mm);glow(0xbfd4ff,26,.55,moon);glow(0xfff1c4,12,.6,moon);
   Z.clouds=G(sc);Z.cloudMats=[];
-  for(let i=0;i<46;i++){const m=new T3.SpriteMaterial({map:SMOKE,color:0x2b3768,transparent:true,opacity:.95,depthWrite:false});Z.cloudMats.push(m);const s=new T3.Sprite(m);
-    const ring=i<30;s.position.set(ring?rnd(-55,55):rnd(-30,30),ring?rnd(11,22):rnd(16,26),ring?-rnd(40,70):-rnd(25,45));s.scale.set(rnd(14,26),rnd(7,12),1);s.userData.v=.3+Math.random()*.6;Z.clouds.add(s)}
+  for(let i=0;i<26;i++){const m=new T3.SpriteMaterial({map:SMOKE,color:0x2b3768,transparent:true,opacity:.95,depthWrite:false});Z.cloudMats.push(m);const s=new T3.Sprite(m);
+    const ring=i<17;s.position.set(ring?rnd(-55,55):rnd(-30,30),ring?rnd(11,22):rnd(16,26),ring?-rnd(40,70):-rnd(25,45));s.scale.set(rnd(14,26),rnd(7,12),1);s.userData.v=.3+Math.random()*.6;Z.clouds.add(s)}
 
   /* ---------- lights ---------- */
   Z.hemi=new T3.HemisphereLight(0xa8bcff,0x2a2040,.85);sc.add(Z.hemi);
@@ -555,7 +565,7 @@ function initScene(){
   Z.flashL=new T3.PointLight(0xcfe0ff,0,140);Z.flashL.position.set(-8,22,-10);sc.add(Z.flashL);
 
   /* ---------- sea with waves ---------- */
-  const seaG=new T3.PlaneGeometry(260,260,70,70);seaG.rotateX(-Math.PI/2);Z.seaG=seaG;Z.seaBase=seaG.attributes.position.array.slice();
+  const seaG=new T3.PlaneGeometry(260,260,44,44);seaG.rotateX(-Math.PI/2);Z.seaG=seaG;Z.seaBase=seaG.attributes.position.array.slice();
   const sea=new T3.Mesh(seaG,new T3.MeshToonMaterial({color:0x123063,gradientMap:grad,flatShading:true}));sea.position.y=-10;sc.add(sea);
   /* ---------- tower ---------- */
   const brick=canvasTex(256,256,(x)=>{x.fillStyle='#454b62';x.fillRect(0,0,256,256);
@@ -590,7 +600,7 @@ function initScene(){
   const dino=G(sc);Z.dino=dino;
   const hips=G(dino,[0,1.05,0]);Z.hips=hips;
   const body=P(new T3.SphereGeometry(1,40,28),BL,{parent:hips,pos:[0,.38,0],scale:[.95,1.1,.85]});Z.body=body;
-  P(new T3.SphereGeometry(1,28,18),BEL,{parent:hips,pos:[0,.28,.42],scale:[.66,.86,.5],outline:0,shadow:false});
+  Z.belly=P(new T3.SphereGeometry(1,28,18),BEL,{parent:hips,pos:[0,.28,.42],scale:[.66,.86,.5],outline:0,shadow:false});
   for(let i=0;i<4;i++)P(new T3.TorusGeometry(.5-i*.03,.018,6,30,Math.PI),0x86c4ec,{parent:hips,pos:[0,.62-i*.2,.86-i*.0],rot:[0,0,Math.PI],scale:[1,.35,1],outline:0,shadow:false});
   P(new T3.TorusGeometry(.86,.15,14,44),RED,{parent:hips,pos:[0,-.08,0],rot:[Math.PI/2,0,0],scale:[1.04,.94,1]});
   P(new T3.BoxGeometry(.3,.26,.08),GOLD,{parent:hips,pos:[0,-.08,.86],outline:.06});P(new T3.BoxGeometry(.16,.13,.1),0x8b5a2b,{parent:hips,pos:[0,-.08,.88],outline:0});
@@ -601,7 +611,7 @@ function initScene(){
     for(let k=-1;k<=1;k++)P(new T3.ConeGeometry(.06,.15,8),WHITE,{parent:g,pos:[k*.14,-.6,.67],rot:[Math.PI/2,0,0],outline:.08});return g});
   Z.arms=[-1,1].map(s=>{const g=G(hips,[s*.86,.82,.12]);const up=G(g);P(new T3.CapsuleGeometry(.17,.5,8,14),BL,{parent:up,pos:[0,-.35,0]});const hand=G(up,[0,-.75,.05]);P(new T3.SphereGeometry(.22,18,12),BL,{parent:hand});
     for(let k=-1;k<=1;k++)P(new T3.ConeGeometry(.045,.12,6),WHITE,{parent:hand,pos:[k*.1,-.2,.12],rot:[2.6,0,0],outline:.1});g.rotation.z=s*.35;g.userData.s=s;g.userData.hand=hand;return g});
-  const key=G(Z.arms[0].userData.hand,[-.08,-.15,.15]);P(new T3.TorusGeometry(.16,.05,8,20),GOLD,{parent:key,pos:[0,.12,0]});P(new T3.CylinderGeometry(.045,.045,.6,8),GOLD,{parent:key,pos:[0,-.2,0]});P(new T3.BoxGeometry(.16,.08,.05),GOLD,{parent:key,pos:[.08,-.42,0]});key.rotation.z=.4;
+  const key=G(Z.arms[0].userData.hand,[-.08,-.15,.15]);Z.key=key;Z.keyBase=key.position.clone();P(new T3.TorusGeometry(.16,.05,8,20),GOLD,{parent:key,pos:[0,.12,0]});P(new T3.CylinderGeometry(.045,.045,.6,8),GOLD,{parent:key,pos:[0,-.2,0]});P(new T3.BoxGeometry(.16,.08,.05),GOLD,{parent:key,pos:[.08,-.42,0]});key.rotation.z=.4;
   // treasure chest with opening lid and eggs inside
   const chest=G(Z.arms[1].userData.hand,[.34,-.05,.14]);Z.chest=chest;
   P(new T3.BoxGeometry(.74,.42,.52),0x8b5a2b,{parent:chest});
@@ -654,6 +664,29 @@ function initScene(){
   Z.dinoMats=[];dino.traverse(o=>{if(o.material&&o.material.isMeshToonMaterial&&o.material!==eggMat)Z.dinoMats.push(o.material)});
   Z.shadowBlob=new T3.Mesh(new T3.CircleGeometry(1.1,24),new T3.MeshBasicMaterial({color:0,transparent:true,opacity:.25,depthWrite:false}));Z.shadowBlob.rotation.x=-Math.PI/2;Z.shadowBlob.position.y=.02;sc.add(Z.shadowBlob);
 
+  /* ---------- антураж: пушка, бочки, монеты, факелы, попугай ---------- */
+  const cannon=G(sc,[2.15,0,-1.85]);cannon.rotation.y=2.45;Z.cannon=cannon;
+  [-1,1].forEach(s=>P(new T3.CylinderGeometry(.3,.3,.1,16),0x5a3a22,{parent:cannon,pos:[s*.3,.3,0],rot:[0,0,Math.PI/2]}));
+  P(new T3.BoxGeometry(.48,.24,.85),0x6b4426,{parent:cannon,pos:[0,.32,0]});
+  const cb=G(cannon,[0,.6,.1]);cb.rotation.x=-.35;P(new T3.CylinderGeometry(.16,.23,1.25,18),0x2a2a33,{parent:cb,rot:[Math.PI/2,0,0],pos:[0,0,.35]});
+  P(new T3.TorusGeometry(.19,.05,8,18),0x3a3a44,{parent:cb,pos:[0,0,.98]});Z.cannonMouth=G(cb,[0,0,1.05]);
+  [[2.35,1.15,0],[2.75,.35,0]].forEach(([x,z],i)=>{const b=G(sc,[x,0,z]);if(i)b.rotation.set(Math.PI/2,0,.6);b.position.y=i?.33:0;
+    P(new T3.CylinderGeometry(.3,.3,.75,18),0x8a5a30,{parent:b,pos:[0,i?0:.38,0]});[-.22,.22].forEach(y=>P(new T3.TorusGeometry(.305,.03,6,24),0x3a3036,{parent:b,pos:[0,(i?0:.38)+y,0],rot:[Math.PI/2,0,0],outline:0}))});
+  const pile=G(sc,[-1.25,0,.95]);P(new T3.ConeGeometry(.55,.32,18),GOLD,{parent:pile,pos:[0,.16,0],outline:.03});
+  for(let i=0;i<10;i++){const a=Math.random()*6.28,r=.5+Math.random()*.35;P(new T3.CylinderGeometry(.07,.07,.025,12),GOLD,{parent:pile,pos:[Math.cos(a)*r,.02,Math.sin(a)*r],rot:[Math.random()*.4,0,Math.random()*.4],outline:0})}
+  const egg2=P(Z.eggGeo,0,{material:Z.eggMat,parent:pile,pos:[.1,.42,0],rot:[0,0,.3],scale:[.25,.25,.25],outline:.06});glow(0x5ff7e8,.7,.5,pile).position.set(.1,.42,0);
+  Z.torches=[];[[2.42,1.93],[-3.02,-.69]].forEach(([x,z])=>{const g=G(sc,[x,.85,z]);P(new T3.CylinderGeometry(.05,.06,.6,8),0x3a2a1a,{parent:g,pos:[0,.3,0]});P(new T3.CylinderGeometry(.1,.07,.14,8),0x2a2a33,{parent:g,pos:[0,.62,0]});
+    const f1=glow(0xff7a1a,.95,.9,g);f1.position.y=.86;const f2=glow(0xffe08a,.45,1,g);f2.position.y=.8;Z.torches.push({g,f1,f2})});
+  const par=G(sc,[-2.42,.86,1.93]);Z.parrot=par;par.rotation.y=.95;const pbd=G(par);Z.parBody=pbd;
+  P(new T3.SphereGeometry(1,16,12),0x2bb84a,{parent:pbd,pos:[0,.32,0],scale:[.2,.28,.2]});
+  P(new T3.SphereGeometry(1,12,8),0xffd23f,{parent:pbd,pos:[0,.28,.1],scale:[.13,.2,.12],outline:0});
+  const phd=G(pbd,[0,.62,.03]);Z.parHead=phd;P(new T3.SphereGeometry(.15,16,12),0xe8433a,{parent:phd});
+  P(new T3.ConeGeometry(.06,.17,8),0xffb02e,{parent:phd,pos:[0,-.03,.16],rot:[1.9,0,0]});
+  [-1,1].forEach(s=>{P(new T3.SphereGeometry(.045,8,6),0xffffff,{parent:phd,pos:[s*.08,.04,.11],outline:0});P(new T3.SphereGeometry(.022,6,6),0x111111,{parent:phd,pos:[s*.085,.04,.15],outline:0})});
+  Z.parWings=[-1,1].map(s=>{const w=G(pbd,[s*.17,.44,-.02]);P(new T3.SphereGeometry(1,10,8),0x1f7fd6,{parent:w,pos:[s*.04,-.12,0],scale:[.06,.2,.13]});w.userData.s=s;return w});
+  const ptl=G(pbd,[0,.14,-.15]);ptl.rotation.x=-2.5;[0x1f7fd6,0xe8433a,0xffd23f].forEach((c,i)=>P(new T3.BoxGeometry(.05,.42,.02),c,{parent:ptl,pos:[(i-1)*.05,.2,0],rot:[0,0,(i-1)*.15],outline:.15}));
+  Z.parState={flap:0,hop:0,talk:0,idle:6};
+
   /* ---------- player (duel only) ---------- */
   const pl=G(sc,[-1.7,.9,8.2]);Z.player=pl;pl.visible=false;
   const rock=P(new T3.CylinderGeometry(1.3,.4,1.6,9),0x5d6680,{parent:pl,pos:[0,-.8,0],outline:.03});rock.receiveShadow=true;
@@ -681,8 +714,8 @@ function initScene(){
   Z.camDuel={p:new T3.Vector3(-1.4,3.6,14.5),l:new T3.Vector3(.4,1.3,0)};
   Z.camP=Z.camHome.p.clone().add(new T3.Vector3(4,6,10));Z.camL=Z.camHome.l.clone();
   Z.ready=true;$('#loading').hidden=true;
-  cv.addEventListener('pointerdown',onTap);
-  cv.addEventListener('pointermove',e=>{const rc=cv.getBoundingClientRect();Z.look=(e.clientX-rc.left)/rc.width*2-1});
+  cv.addEventListener('pointerdown',onDown);addEventListener('pointerup',onUp);addEventListener('pointercancel',()=>{drag=null});
+  addEventListener('pointermove',onMove);Z.spinV=0;Z.spinYaw=0;Z.spinAcc=0;Z.cannonCd=0;
   requestAnimationFrame(loop);
 }
 
@@ -705,12 +738,32 @@ Z.hit=function(s){Z.hitF=Math.max(Z.hitF||0,s);Z.kick=Math.max(Z.kick,.25*s)};
 Z.burst=function(color,n,at){if(!Z.ready)return;const p=at||new T3.Vector3(0,2.6+Z.dino.position.y,.6);sparks(p,color,n,5);stars(p,Math.round(n/5));shock(p,color,2.4)};
 Z.headPos=function(){const v=new T3.Vector3();Z.head.getWorldPosition(v);v.y+=.5;return v};
 Z.screenHead=function(){const v=Z.headPos().project(Z.cam);return{x:(v.x+1)/2*hero.clientWidth,y:(1-v.y)/2*hero.clientHeight}};
-function onTap(e){if(!Z.ready||Z.mode!=='home'||CH.on)return;const rc=$('#cv').getBoundingClientRect();
-  Z.ray.setFromCamera({x:(e.clientX-rc.left)/rc.width*2-1,y:-((e.clientY-rc.top)/rc.height)*2+1},Z.cam);
-  const hits=Z.ray.intersectObject(Z.dino,true);if(!hits.length)return;
-  let o=hits[0].object,isChest=false;while(o){if(o===Z.chest){isChest=true;break}o=o.parent}
-  if(isChest){CH.play();return}
-  const k=pick(['laugh','taunt','roar']);Z.act(k);if(k==='laugh')sfx.laugh();if(k==='roar')sfx.roar();sparks(hits[0].point,0x9fe8ff,8,2,.25);VO.play(pick(['tap1','tap2','tap3','tap4']),true)}
+const TAPS=[];let drag=null;
+function partOf(o){while(o){if(o===Z.chest)return'chest';if(o===Z.hat)return'hat';if(o===Z.tail[0])return'tail';if(o===Z.belly)return'belly';if(o===Z.parrot)return'parrot';if(o===Z.cannon)return'cannon';o=o.parent}return'body'}
+function pick3(e){const rc=$('#cv').getBoundingClientRect();Z.ray.setFromCamera({x:(e.clientX-rc.left)/rc.width*2-1,y:-((e.clientY-rc.top)/rc.height)*2+1},Z.cam);return Z.ray.intersectObjects([Z.dino,Z.parrot,Z.cannon],true)[0]}
+function onDown(e){if(!Z.ready||Z.mode!=='home'||CH.on)return;drag={x:e.clientX,moved:0}}
+function onMove(e){const rc=$('#cv').getBoundingClientRect();Z.look=(e.clientX-rc.left)/rc.width*2-1;Z.lookY=(e.clientY-rc.top)/rc.height*2-1;
+  if(drag&&Z.dino.visible){const dx=e.clientX-drag.x;drag.x=e.clientX;drag.moved+=Math.abs(dx);if(drag.moved>10){Z.spinV+=dx*.0035;if(Math.abs(dx)>14&&performance.now()-(Z.lastWh||0)>220){Z.lastWh=performance.now();sfx.whoosh()}}}}
+function onUp(e){if(!drag)return;const d=drag;drag=null;if(d.moved<=10)onTap(e)}
+function setExpr(name,sec){Z.expr={name,t:sec}}
+function onTap(e){if(!Z.ready||Z.mode!=='home'||CH.on)return;const h=pick3(e);if(!h)return;const part=partOf(h.object);
+  if(part==='parrot'){parrotTalk(true);return}
+  if(part==='cannon'){fireCannon();return}
+  if(!Z.dino.visible)return;
+  sparks(h.point,0x9fe8ff,8,2,.25);
+  if(part==='chest'){CH.play();return}
+  const now=performance.now();TAPS.push(now);while(TAPS.length&&now-TAPS[0]>2200)TAPS.shift();
+  if(TAPS.length>=4){TAPS.length=0;Z.act('roar');Z.act('stomp');setExpr('angry',2.5);sfx.bigroar();VO.play('angry',true);return}
+  if(part==='hat'){Z.act('hatflip');sfx.whoosh();setTimeout(sfx.thud,700);VO.play('hat',true);return}
+  if(part==='tail'){Z.act('jump',{dur:.7});setExpr('surprised',1.2);sfx.boing();VO.play('tail',true);return}
+  if(part==='belly'){Z.act('tickle',{dur:1.4});setExpr('happy',1.6);sfx.laugh();VO.play('tickle',true);return}
+  const k=pick(['laugh','taunt','roar','wink']);if(k==='wink'){Z.winkT=.5;setExpr('sly',1.5);VO.play('sneaky',true);return}
+  Z.act(k);setExpr(k==='laugh'?'happy':k==='roar'?'angry':'sly',1.5);if(k==='laugh')sfx.laugh();if(k==='roar')sfx.roar();VO.play(pick(['tap1','tap2','tap3','tap4']),true)}
+function parrotTalk(force){if(!Z.parState)return;Z.parState.flap=1.2;Z.parState.hop=.5;sfx.squawk();if(force||Math.random()<.5)VO.play(pick(['parrot1','parrot2','parrot3']),force,'Попугай')}
+function fireCannon(){if(Z.cannonCd>0)return;Z.cannonCd=2;const m=new T3.Vector3();Z.cannonMouth.getWorldPosition(m);sfx.boom();Z.shake=.35;
+  fxSprite({pos:m,color:0xffd27a,size:.6,grow:5,life:.25});smoke(m,10,0x8a93b0,.9);sparks(m,0xffb347,16,4,.3);setExpr('surprised',1.2);
+  const ball=new T3.Group();ball.add(new T3.Mesh(new T3.SphereGeometry(.14,10,8),new T3.MeshBasicMaterial({color:0x111111})));Z.sc.add(ball);
+  const to=m.clone().add(new T3.Vector3(6,-10,-18));Z.shots.push({o:ball,a:m.clone(),b:to,t:0,dur:1.2,arc:3,smoke:true,cb:()=>{const p=to.clone();p.y=-9.5;fxSprite({pos:p,color:0xbfe0ff,size:.6,grow:6,life:.5});smoke(p,6,0xbfd4ff,1.2)}})}
 function resizeIfNeeded(){const c=Z.r.domElement,w=c.clientWidth,h=c.clientHeight,pr=Z.r.getPixelRatio();if(c.width!==Math.round(w*pr)||c.height!==Math.round(h*pr)){Z.r.setSize(w,h,false);Z.cam.aspect=w/h;Z.cam.updateProjectionMatrix()}}
 let last=0;
 function loop(now){requestAnimationFrame(loop);let dt=Math.min(.05,(now-(last||now))/1000);last=now;if(!Z.visible&&Z.mode==='home'&&!CH.on)return;resizeIfNeeded();
@@ -735,9 +788,24 @@ function update(dt){
   Z.arms.forEach((a,i)=>{a.rotation.set(Math.sin(t*2+i)*.08,0,a.userData.s*.35+Math.sin(t*2.4)*.04)});
   Z.tail.forEach((g,i)=>{g.rotation.y=Math.sin(t*2.2*sp-i*.6)*.38;g.rotation.x=-.1+Math.sin(t*1.6-i*.5)*.08});
   let jaw=Z.talkT>0?(.12+Math.abs(Math.sin(t*17))*.28*(.6+.4*Math.sin(t*5))):.04+rage*.08;Z.talkT=Math.max(0,Z.talkT-dt);
-  Z.blinkT-=dt;const bl=Z.blinkT<0?.1:1;if(Z.blinkT<-.12)Z.blinkT=2+Math.random()*3;Z.eyes.forEach(e=>{e.scale.y=bl;e.userData.rage.material.opacity=rage>.3?.6+.3*Math.sin(t*8):0});
-  Z.brows.forEach((b,i)=>{b.position.y=1.02-rage*.06;b.rotation.z=(i?1:-1)*(.38+rage*.2)});
-  Z.dino.position.set(0,0,0);Z.dino.rotation.set(0,.1+Math.sin(t*.4)*.05,0);let sq=1;
+  const E=Z.expr||(Z.expr={name:'neutral',t:0});E.t-=dt;if(E.t<=0)E.name=rage>.3?'angry':'neutral';
+  const EX={neutral:[0,0,.38,.38,1,0,0],sly:[.1,-.05,.05,.55,.62,.05,.12],angry:[-.07,-.07,.62,.62,.75,.1,0],surprised:[.14,.14,-.15,-.15,1.25,.35,0],happy:[.1,.1,-.05,-.05,.35,.22,-.08],dizzy:[.05,-.06,-.2,.35,.8,.15,.2]}[E.name];
+  Z.ex=Z.ex||[0,0,.38,.38,1,0,0];for(let i=0;i<7;i++)Z.ex[i]=lerp(Z.ex[i],EX[i],Math.min(1,dt*10));const ex=Z.ex;
+  jaw+=ex[5];Z.neck.rotation.z+=ex[6];Z.winkT=Math.max(0,(Z.winkT||0)-dt);
+  Z.blinkT-=dt;const bl=Z.blinkT<0?.1:1;if(Z.blinkT<-.12)Z.blinkT=2+Math.random()*3;
+  const lx=Z.lookOverride?Z.lookOverride[0]:clamp(Z.look||0,-1,1),ly=Z.lookOverride?Z.lookOverride[1]:clamp(Z.lookY||0,-1,1);
+  Z.eyes.forEach((e,i)=>{const s=i?1:-1;e.userData.pupil.position.set(-s*.02+lx*.07,-.02-ly*.06,.13);e.scale.y=bl*ex[4]*(i===0&&Z.winkT>0?.12:1)*(1+(ex[4]>1?.1:0));e.userData.rage.material.opacity=rage>.3?.6+.3*Math.sin(t*8):0});
+  Z.brows.forEach((b,i)=>{b.position.y=1.02+(i?ex[1]:ex[0])-rage*.04;b.rotation.z=i?(ex[3]+rage*.15):-(ex[2]+rage*.15)});
+  Z.spinYaw+=Z.spinV;Z.spinV*=Math.exp(-dt*2.2);Z.spinAcc=Z.spinAcc*Math.exp(-dt*.7)+Math.abs(Z.spinV);
+  if(Math.abs(Z.spinV)<.004){const tw=Math.round(Z.spinYaw/(Math.PI*2))*Math.PI*2;Z.spinYaw=lerp(Z.spinYaw,tw,Math.min(1,dt*3))}
+  if(Z.spinAcc>4&&!Z.acts.some(a=>a.kind==='dizzy')){Z.spinAcc=0;Z.act('dizzy',{dur:2.6});setExpr('dizzy',2.8);sfx.boing();VO.play('dizzy',true)}
+  Z.cannonCd=Math.max(0,Z.cannonCd-dt);
+  Z.dino.position.set(0,0,0);Z.dino.rotation.set(0,.1+Math.sin(t*.4)*.05+Z.spinYaw,0);let sq=1;
+  if(Z.mode==='home'&&!CH.on&&Z.dino.visible){Z.idleT=(Z.idleT??5)-dt;if(Z.idleT<=0&&!Z.acts.length&&Z.talkT<=0&&Math.abs(Z.spinV)<.01){Z.idleT=4.5+Math.random()*4;
+    const k=pick(['sneak','count','toss','stomp','wink','sneak','toss','count']);
+    if(k==='wink'){Z.winkT=.5;setExpr('sly',1.4)}else{Z.act(k,{dur:{sneak:2.6,count:2.8,toss:1.5,stomp:1}[k]});setExpr(k==='stomp'?'angry':k==='count'?'happy':'sly',{sneak:2.6,count:2.8,toss:1.5,stomp:1.2}[k])}
+    if(SND.ctx&&Math.random()<.4){const m={sneak:'sneaky',count:'count',toss:'key',stomp:'tap4'}[k];if(m)VO.play(m)}
+    if(k==='toss')setTimeout(sfx.whoosh,200)}}
   let lidOpen=0;Z.chest.quaternion.identity();
   /* actions */
   Z.acts=Z.acts.filter(a=>{a.t+=dt;const p=Math.min(1,a.t/a.dur),s=Math.sin(p*Math.PI);
@@ -757,6 +825,17 @@ function update(dt){
       if(a.t>3.3){Z.neck.rotation.y=.35*Math.sin(Math.min(1,(a.t-3.3)/.3)*Math.PI/2);jaw=Math.max(jaw,.3)}
       if(p>.85){const q=(p-.85)/.15;arm.rotation.x=-1.05*(1-q);arm.rotation.y=-.5*(1-q);a.face=1-q}
       {const pq=new T3.Quaternion();Z.chest.parent.getWorldQuaternion(pq);const dq=new T3.Quaternion().setFromEuler(new T3.Euler(.55,.2,0));Z.chest.quaternion.copy(new T3.Quaternion().slerp(pq.invert().multiply(dq),a.face||0))}}
+    if(a.kind==='hatflip'){Z.hatExtra={y:Math.sin(p*Math.PI)*1.5,r:p*Math.PI*2};if(p>=1)Z.hatExtra=null;Z.neck.rotation.x=-.35*s}
+    if(a.kind==='tickle'){Z.hips.rotation.z=Math.sin(a.t*32)*.1*s;Z.hips.position.y+=Math.abs(Math.sin(a.t*16))*.08;jaw=Math.max(jaw,.2+Math.abs(Math.sin(a.t*18))*.2);Z.arms.forEach(r=>{r.rotation.x=-.8*s})}
+    if(a.kind==='dizzy'){Z.neck.rotation.z=Math.sin(a.t*6)*.28*s;Z.neck.rotation.x=Math.cos(a.t*6)*.14*s;Z.hips.rotation.z=Math.sin(a.t*3)*.12*s;jaw=Math.max(jaw,.15);
+      if(!a.st){a.st=[];for(let i=0;i<4;i++){const sp=new T3.Sprite(new T3.SpriteMaterial({map:Z.STAR,color:0xfff2a8,transparent:true,depthWrite:false}));sp.scale.setScalar(.32);Z.head.add(sp);a.st.push(sp)}}
+      a.st.forEach((sp,i)=>{const an=a.t*5+i*Math.PI/2;sp.position.set(Math.cos(an)*.95,1.5,Math.sin(an)*.95);sp.material.opacity=Math.min(1,s*3)});if(p>=1)a.st.forEach(sp=>{Z.head.remove(sp);sp.material.dispose()})}
+    if(a.kind==='sneak'){Z.neck.rotation.y=Math.sin(p*Math.PI*2)*.75;Z.neck.rotation.x=.12*s;Z.hips.position.y-=.1*s;Z.arms[1].rotation.x=-.4*s}
+    if(a.kind==='count'){Z.arms[1].rotation.x=-.75*s;Z.arms[1].rotation.y=-.3*s;lidOpen=Math.max(lidOpen,.5*Math.min(1,s*1.8));Z.neck.rotation.x=.35*s;Z.neck.rotation.y=-.35*s;jaw=Math.max(jaw,.08)}
+    if(a.kind==='toss'){const kp=clamp((p-.15)/.7,0,1);Z.arms[0].rotation.z=-(.35+1.1*Math.min(1,s*2));Z.key.position.y=Z.keyBase.y+Math.sin(kp*Math.PI)*1.7;Z.key.rotation.z=.4+kp*Math.PI*4;Z.neck.rotation.x=-.45*Math.sin(kp*Math.PI);if(p>=1){Z.key.position.copy(Z.keyBase);Z.key.rotation.z=.4}}
+    if(a.kind==='stomp'){const l=Z.legs[1];l.rotation.x=p<.5?-.9*Math.sin(p/.5*Math.PI/2):-.9*(1-Math.min(1,(p-.5)/.12));if(p>.55&&!a.d){a.d=1;Z.shake=Math.max(Z.shake,.25);smoke(new T3.Vector3(.45,.1,.3),6,0x8a93b0,.6);sfx.thud()}}
+    if(a.kind==='block'){Z.arms[1].rotation.x=-1.5*s;Z.arms[1].rotation.y=-.6*s;Z.neck.rotation.x=.2*s}
+    if(a.kind==='heal'){Z.arms[0].rotation.z=-(.35+1.5*s);Z.neck.rotation.x=-.4*s;jaw=Math.max(jaw,.3*Math.abs(Math.sin(a.t*12)))}
     if(a.kind==='defeat'){Z.dino.rotation.x=-1.4*ease(p);Z.dino.rotation.y=.1+p*6;Z.dino.position.y=p<.35?2*Math.sin(p/.35*Math.PI/2):2-14*Math.pow((p-.35)/.65,2);Z.dino.position.z=-p*3;jaw=.5;
       if(p>=1&&!a.fired){a.fired=true;Z.dino.visible=false}}
     if(p>=1&&a.done)a.done();return p<1});
@@ -766,7 +845,7 @@ function update(dt){
   if(lidOpen>.5&&Math.random()<dt*14){const v=new T3.Vector3();Z.chest.getWorldPosition(v);v.y+=.3;fxSprite({tex:Z.STAR,pos:v.add(new T3.Vector3((Math.random()-.5)*.6,0,(Math.random()-.5)*.4)),color:Math.random()<.5?0x7af7ff:0xffe9a0,v:new T3.Vector3(0,1.4,0),life:.8,size:.18,drag:.5,spin:4})}
   Z.jaw.rotation.x=jaw;Z.hips.scale.set(1/sq,sq,1/sq);
   // hat spring (secondary motion)
-  const hs=Z.hatSpring,target=-Z.neck.rotation.x*.6-(Z.hips.position.y-1.05)*2;hs.v+=(target-hs.x)*60*dt;hs.v*=Math.exp(-dt*6);hs.x+=hs.v*dt;Z.hat.rotation.x=hs.x*.5;
+  const hs=Z.hatSpring,target=-Z.neck.rotation.x*.6-(Z.hips.position.y-1.05)*2;hs.v+=(target-hs.x)*60*dt;hs.v*=Math.exp(-dt*6);hs.x+=hs.v*dt;Z.hat.rotation.x=hs.x*.5;if(Z.hatExtra){Z.hat.position.y=Z.hatExtra.y;Z.hat.rotation.x+=Z.hatExtra.r}else Z.hat.position.y=0;
   const tz=-Z.neck.rotation.z*.8;hs.vz+=(tz-hs.z)*60*dt;hs.vz*=Math.exp(-dt*6);hs.z+=hs.vz*dt;Z.hat.rotation.z=hs.z*.5;
   Z.hitF=Math.max(0,(Z.hitF||0)-dt*3);const rg=rage*(.25+.15*Math.sin(t*6));
   Z.dinoMats.forEach(m=>{m.emissive.setRGB(Z.hitF+rg,Z.hitF*.7,Z.hitF*.7)});
@@ -791,16 +870,21 @@ function update(dt){
   if(Math.random()<dt*25){const ang=Math.random()*6.28,rr=Math.random()*3;fxSprite({pos:new T3.Vector3(Math.cos(ang)*rr,.06,Math.sin(ang)*rr),color:0x9fb6ff,size:.15,grow:.8,life:.25,op:.5})}
   Z.clouds.children.forEach(c=>{c.position.x+=c.userData.v*dt;if(c.position.x>60)c.position.x=-60});
   Z.cloudMats.forEach(m=>m.color.setRGB(.17+Z.flash*.5,.21+Z.flash*.5,.4+Z.flash*.45));
-  if((Z.frame=(Z.frame||0)+1)%2===0){const pa=Z.seaG.attributes.position.array,b=Z.seaBase;for(let i=0;i<pa.length;i+=3){const x=b[i],z=b[i+2];pa[i+1]=Math.sin(x*.12+t*1.1)*.45+Math.cos(z*.16+t*.8)*.35+Math.sin((x+z)*.3+t*2)*.1}
+  if((Z.frame=(Z.frame||0)+1)%3===0){const pa=Z.seaG.attributes.position.array,b=Z.seaBase;for(let i=0;i<pa.length;i+=3){const x=b[i],z=b[i+2];pa[i+1]=Math.sin(x*.12+t*1.1)*.45+Math.cos(z*.16+t*.8)*.35+Math.sin((x+z)*.3+t*2)*.1}
     Z.seaG.attributes.position.needsUpdate=true;Z.seaG.computeVertexNormals()}
-  const fa=Z.flagG.attributes.position.array,fb=Z.flagBase;for(let i=0;i<fa.length;i+=3){const x=fb[i];fa[i+2]=Math.sin(x*3-t*7)*.18*x;fa[i+1]=fb[i+1]+Math.sin(x*2-t*5)*.04*x}Z.flagG.attributes.position.needsUpdate=true;Z.flagG.computeVertexNormals();
+  const fa=Z.flagG.attributes.position.array,fb=Z.flagBase;for(let i=0;i<fa.length;i+=3){const x=fb[i];fa[i+2]=Math.sin(x*3-t*7)*.18*x;fa[i+1]=fb[i+1]+Math.sin(x*2-t*5)*.04*x}Z.flagG.attributes.position.needsUpdate=true;if(Z.frame%2)Z.flagG.computeVertexNormals();
+  if(Z.parState){const ps=Z.parState;ps.flap=Math.max(0,ps.flap-dt);ps.hop=Math.max(0,ps.hop-dt);ps.talk=Math.max(0,ps.talk-dt);
+    Z.parWings.forEach(w=>{w.rotation.z=w.userData.s*(ps.flap>0?.4+Math.abs(Math.sin(t*28))*1.1:.05)});Z.parBody.position.y=ps.hop>0?Math.sin((1-ps.hop/.5)*Math.PI)*.35:0;
+    Z.parHead.rotation.z=Math.sin(t*1.7)*.25+(ps.talk>0?Math.sin(t*22)*.15:0);Z.parHead.rotation.y=Math.sin(t*.9)*.6;Z.parHead.rotation.x=ps.talk>0?Math.abs(Math.sin(t*18))*-.3:0;
+    if(Z.mode==='home'&&!CH.on){ps.idle-=dt;if(ps.idle<=0){ps.idle=8+Math.random()*8;parrotTalk(false)}}}
+  Z.torches.forEach(tc=>{const f=.85+Math.random()*.3;tc.f1.scale.setScalar(.95*f);tc.f2.scale.setScalar(.45*f);tc.f1.material.opacity=.75+Math.random()*.2;if(Math.random()<dt*4)fxSprite({pos:tc.g.position.clone().add(new T3.Vector3(0,1,0)),color:0xffa040,v:new T3.Vector3((Math.random()-.5)*.3,.9,0),size:.08,life:1})});
   Z.ship.position.y=-9.6+Math.sin(t*.9)*.25;Z.ship.rotation.z=Math.sin(t*.7)*.06;
   Z.lanGlow.material.opacity=.75+Math.sin(t*13)*.08+Math.random()*.08;Z.lanL.intensity=2+Math.random()*.4;
   if(Math.random()<dt*3)fxSprite({pos:new T3.Vector3((Math.random()-.5)*.4,-2,3.9),color:0xffa040,v:new T3.Vector3((Math.random()-.5)*.4,.8,.2),size:.12,life:1.4,g:.2});
   Z.boltT-=dt;if(Z.boltT<=0){strike();Z.boltT=(3+Math.random()*4)/(1+rage*1.5)}
   Z.flash*=Math.exp(-dt*7);Z.flashL.intensity=Z.flash*5;Z.hemi.intensity=.85+Z.flash*.9;Z.boltMat.opacity=Math.min(1,Z.flash*1.5);Z.boltGlowMat.opacity=Math.min(.6,Z.flash);
   const u=Z.sky.material.uniforms;u.flash.value=Z.flash;u.t.value=t;u.rage.value=lerp(u.rage.value,rage>.4?1:rage*.6,dt*2);
-  const say=$('#say');if(!say.classList.contains('off')){const h=Z.screenHead();say.style.left=clamp(h.x+40,16,hero.clientWidth-246)+'px';say.style.top=clamp(h.y-6,(Z.mode==='duel'||CH.on?110:90),hero.clientHeight-80)+'px'}
+  const say=$('#say');if(!say.classList.contains('off')){let h;if(Z.speaker==='parrot'){const v=new T3.Vector3();Z.parHead.getWorldPosition(v);v.y+=.3;v.project(Z.cam);h={x:(v.x+1)/2*hero.clientWidth,y:(1-v.y)/2*hero.clientHeight}}else h=Z.screenHead();say.style.left=clamp(h.x+40,16,hero.clientWidth-246)+'px';say.style.top=clamp(h.y-6,(Z.mode==='duel'||CH.on?110:90),hero.clientHeight-80)+'px'}
 }
 function strike(close){
   Z.bolt.children.slice().forEach(c=>{Z.bolt.remove(c);c.geometry.dispose()});
@@ -813,7 +897,7 @@ function strike(close){
 
 /* ================= CHEST CUTSCENE («видео» про яйца в сундуке) ================= */
 const CH={on:false,t:0,ev:[],played:false,cam:null,
-  play(){if(!Z.ready||CH.on||D.on)return;CH.on=true;CH.played=true;scroll.scrollTo({top:0,behavior:'smooth'});app.classList.add('cine');
+  play(){if(!Z.ready||CH.on||D.on)return;if(S.hp<=0||!Z.dino.visible){toast('Сундук уже твой — Завр повержен');return}CH.on=true;CH.played=true;scroll.scrollTo({top:0,behavior:'smooth'});app.classList.add('cine');
     const cap=$('#cineCap');const say=(t)=>{cap.textContent=t;cap.classList.add('on')};
     sfx.stinger();say('Что Завр прячет в сундуке?..');MUS.setIntensity(0);
     Z.act('peek');const chestPos=()=>{const v=new T3.Vector3();Z.chest.getWorldPosition(v);return v};
@@ -829,23 +913,30 @@ const CH={on:false,t:0,ev:[],played:false,cam:null,
 $('#chestBtn').onclick=()=>{ac();if(SND.on&&!SND.loops.rain){startRain();MUS.start()}CH.play()};
 
 /* ================= DUEL ================= */
-const PH=[{n:'Сложение и вычитание',k:'add'},{n:'Умножение',k:'mul',sub:'Завр разозлился!'},{n:'Деление и смешанные',k:'mix',timer:10,sub:'Ярость Завра! На ответ 10 секунд'}];
-const D={on:false};const DMG=12;
+const PH=[{n:'Сложение и вычитание',k:'add',timer:15},{n:'Умножение',k:'mul',timer:11,sub:'Завр разозлился и прячется за сундуком!'},{n:'Деление и выражения',k:'mix',timer:8,sub:'Ярость Завра! На ответ 8 секунд'}];
+const D={on:false};const DMG=8,FAST_MS=4000;
 const HEART='<svg viewBox="0 0 24 24"><path fill="#FF6170" d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11Z"/></svg>';
 function phaseOf(hp){return hp>66?0:hp>33?1:2}
-function genQ(k){let a,b,ans,txt;
-  if(k==='add'){if(Math.random()<.5){a=rnd(18,59);b=rnd(12,39);ans=a+b;txt=`${a} + ${b}`}else{a=rnd(41,95);b=rnd(12,38);ans=a-b;txt=`${a} − ${b}`}}
-  else if(k==='mul'){a=rnd(3,9);b=rnd(4,9);ans=a*b;txt=`${a} × ${b}`}
-  else{const t=rnd(0,2);if(t===0){b=rnd(3,9);ans=rnd(4,9);a=b*ans;txt=`${a} : ${b}`}else if(t===1){a=rnd(11,19);b=rnd(2,4);ans=a*b;txt=`${a} × ${b}`}else{a=rnd(3,8);b=rnd(3,8);const c=rnd(5,20);ans=a*b+c;txt=`${a} × ${b} + ${c}`}}
-  const o=new Set([ans]);const d=[-10,-2,-1,1,2,10,-3,3,-8,8,-5,5];while(o.size<4){const v=ans+d[rnd(0,d.length-1)];if(v>0)o.add(v)}
-  return{txt,ans,opts:shuffle([...o])}}
+function genQ(k){let a,b,c,ans,txt,full=false;const r=Math.random();
+  if(k==='add'){if(r<.35){a=rnd(27,68);b=rnd(15,49);if((a%10)+(b%10)<10)b+=10-(b%10)+rnd(1,4);ans=a+b;txt=`${a} + ${b}`}
+    else if(r<.7){a=rnd(52,96);b=rnd(17,48);if(a%10>=b%10)b+=Math.min(9,(a%10)-(b%10)+1);ans=a-b;txt=`${a} − ${b}`}
+    else{a=rnd(25,60);b=rnd(12,30);c=rnd(8,25);ans=a+b-c;txt=`${a} + ${b} − ${c}`}}
+  else if(k==='mul'){if(r<.6){a=rnd(6,9);b=rnd(6,9);ans=a*b;txt=`${a} × ${b}`}
+    else if(r<.8){b=rnd(6,9);ans=rnd(4,9);a=ans*b;txt=`? × ${b} = ${a}`;full=true}
+    else{a=rnd(11,15);b=rnd(3,6);ans=a*b;txt=`${a} × ${b}`}}
+  else{if(r<.3){b=rnd(6,9);ans=rnd(6,9);a=b*ans;txt=`${a} : ${b}`}
+    else if(r<.55){a=rnd(4,9);b=rnd(4,9);c=rnd(10,30);ans=a*b-c;if(ans<5){ans=a*b+c;txt=`${a} × ${b} + ${c}`}else txt=`${a} × ${b} − ${c}`}
+    else if(r<.8){a=rnd(3,9);b=rnd(2,6);c=rnd(2,5);ans=(a+b)*c;txt=`(${a} + ${b}) × ${c}`}
+    else{b=rnd(3,8);c=rnd(3,8);a=b*c;const d=rnd(5,20);ans=a/b+d;txt=`${a} : ${b} + ${d}`}}
+  const o=new Set([ans]);const d=[-10,-2,-1,1,2,10,-3,3,-9,9,-5,5,-11,11];while(o.size<4){const v=ans+d[rnd(0,d.length-1)];if(v>0)o.add(v)}
+  return{txt,ans,full,opts:shuffle([...o])}}
 $('#duelBtn').onclick=()=>startDuel();
 function startDuel(){
   if(D.on)return;ac();if(CH.on)CH.stop();
   app.style.setProperty('--ph',app.clientHeight+'px');
   scroll.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
   setTimeout(()=>{
-    Object.assign(D,{on:true,hp:S.hp,start:S.hp,lives:3,streak:0,bonus:0,lock:true,phase:phaseOf(S.hp)});
+    Object.assign(D,{on:true,hp:S.hp,start:S.hp,lives:3,streak:0,bonus:0,lock:true,phase:phaseOf(S.hp),qn:0,missRow:0,healed:0});
     app.classList.add('duel');Z.mode='duel';if(Z.ready){Z.player.visible=true;Z.rage=D.phase*.5}
     $('#res').hidden=true;$('#duelUI').classList.toggle('rage',D.phase===2);renderHP();renderLives();
     sfx.portal();screenFlash('#a46bff',.35);MUS.setIntensity(D.phase===2?2:1);if(SND.on){MUS.start();if(!SND.loops.rain)startRain()}
@@ -858,9 +949,10 @@ function endDuel(){D.on=false;clearTimer();$('#qCard').classList.add('away');app
 $('#dClose').onclick=()=>{if(D.on&&D.hp>0)VO.play('flee',true);$('#res').hidden=true;endDuel()};
 function renderHP(){$('#hpFill').style.width=D.hp+'%';$('#hpLag').style.width=D.hp+'%';$('#hpT').textContent=`${D.hp} / 100`;$('#dPhase').textContent=`фаза ${D.phase+1} из 3`}
 function renderLives(){$('#hearts').innerHTML=[0,1,2].map(i=>HEART.replace('<svg',`<svg class="${i<D.lives?'':'lost'}"`)).join('')}
-function nextQ(){const P=PH[D.phase];D.q=genQ(P.k);D.lock=false;
+function nextQ(){const P=PH[D.phase];D.q=genQ(P.k);D.lock=false;D.qn++;D.qStart=performance.now();D.shield=D.phase>=1&&D.qn%3===0;if(D.shield&&Z.ready){Z.act('block',{dur:30});VO.play('shield',true);sfx.shieldHit()}
+  $('#qDmg').textContent=D.shield?'Щит! Отвечай быстро':`Быстро: −${DMG+4}`;$('#qDmg').classList.toggle('combo',D.shield);
   $('#qStep').textContent=`Фаза ${D.phase+1} · ${P.n}`;
-  const q=$('#qText');q.textContent=D.q.txt+' = ?';q.style.fontSize=D.q.txt.length>9?'40px':'';q.classList.remove('pop');void q.offsetWidth;q.classList.add('pop');
+  const q=$('#qText');q.textContent=D.q.full?D.q.txt:D.q.txt+' = ?';q.style.fontSize=q.textContent.length>14?'34px':q.textContent.length>11?'40px':'';q.classList.remove('pop');void q.offsetWidth;q.classList.add('pop');
   $('#opts').innerHTML=D.q.opts.map(v=>`<button class="opt" data-v="${v}">${v}</button>`).join('');
   $('#qTimer').hidden=!P.timer;if(P.timer)startTimer(P.timer)}
 function startTimer(sec){clearTimer();const end=performance.now()+sec*1000,bar=$('#qTimer'),i=bar.querySelector('i');let lastS=sec;
@@ -874,9 +966,12 @@ $('#opts').addEventListener('click',e=>{const b=e.target.closest('.opt');if(!b||
 function fxText(txt,cls,x,y){const el=document.createElement('div');el.className='dmg '+(cls||'');el.textContent=txt;el.style.left=x+'px';el.style.top=y+'px';$('#fx').appendChild(el);setTimeout(()=>el.remove(),1000)}
 function shakeHero(){hero.classList.remove('shake');void hero.offsetWidth;hero.classList.add('shake')}
 function hit(){
-  D.streak++;const combo=D.streak>=3;if(combo)D.bonus++;
+  D.streak++;D.missRow=0;const combo=D.streak>=3;if(combo)D.bonus++;const fast=performance.now()-D.qStart<FAST_MS;const shield=D.shield;D.shield=false;
+  if(Z.ready)Z.acts=Z.acts.filter(a=>a.kind!=='block');
+  if(shield&&!fast){D.streak=Math.max(0,D.streak-1);sfx.shieldHit();if(Z.ready){const p=new T3.Vector3(.6,2,1.2);sparks(p,0xffe08a,20,4);shock(p,0xffe08a,2)}
+    fxText('Щит выдержал!','msg',hero.clientWidth/2,hero.clientHeight*.4);VO.play('miss3',true);setTimeout(nextQ,1000);return}
   const cb=$('#qCombo');cb.hidden=!combo;if(combo){cb.textContent=`Комбо ×${D.streak}`;cb.classList.remove('combo');void cb.offsetWidth;cb.classList.add('combo')}
-  const dmg=DMG+(combo?4:0);
+  const dmg=DMG+(fast?4:0)+(combo?4:0);if(fast&&!combo)setTimeout(()=>fxText(shield?'Щит пробит!':'Быстро!','msg',hero.clientWidth/2,hero.clientHeight*.42),150);if(fast&&Math.random()<.3&&!combo)setTimeout(()=>VO.play('fast'),200);
   const land=()=>{D.hp=Math.max(0,D.hp-dmg);renderHP();sfx.impact(combo);Z.hit(1.2);
     const h=Z.ready?Z.screenHead():{x:hero.clientWidth/2,y:200};fxText(`−${dmg}`,combo?'combo':'',h.x+rnd(-30,30),h.y+30);
     if(Z.ready){Z.freeze=.07;Z.act('hurt');const p=new T3.Vector3(0,2.6,.7);sparks(p,combo?0x7af7ff:0xffd34d,combo?50:30,6);stars(p,combo?10:6);shock(p,combo?0x7af7ff:0xffe08a,combo?3.4:2.4);
@@ -891,11 +986,12 @@ function hit(){
   else setTimeout(land,200);
 }
 function miss(timeout){
-  D.streak=0;$('#qCombo').hidden=true;
-  const ouch=()=>{D.lives--;renderLives();const v=$('#vig');v.classList.add('on');setTimeout(()=>v.classList.remove('on'),60);shakeHero();sfx.boom();screenFlash('#ffb347',.45);
+  D.streak=0;$('#qCombo').hidden=true;D.missRow++;if(Z.ready)Z.acts=Z.acts.filter(a=>a.kind!=='block');D.shield=false;
+  const ouch=()=>{D.lives--;if(D.missRow>=2&&D.lives>0&&D.hp<100){D.missRow=0;setTimeout(()=>{D.hp=Math.min(100,D.hp+10);renderHP();sfx.gulp();sfx.heal();VO.play('heal',true);if(Z.ready){Z.act('heal',{dur:1.2});const p=Z.headPos();sparks(p,0x5FD34C,24,3);stars(p,6)}
+      fxText('Завр +10 HP','msg',hero.clientWidth/2,hero.clientHeight*.35);const ph=phaseOf(D.hp);if(ph<D.phase){D.phase=ph;renderHP();Z.rage=D.phase*.5}},700)}renderLives();const v=$('#vig');v.classList.add('on');setTimeout(()=>v.classList.remove('on'),60);shakeHero();sfx.boom();screenFlash('#ffb347',.45);
     if(Z.ready){Z.pHurt=.8;Z.shake=.7;Z.freeze=.05;const p=Z.player.position.clone();p.y+=1;fireball(p)}
     fxText(timeout?'Время вышло!':'Бах!','msg',hero.clientWidth*.32,hero.clientHeight*.6);
-    if(D.lives<=0)setTimeout(lose,900);else setTimeout(nextQ,1200)};
+    if(D.lives<=0)setTimeout(lose,900);else setTimeout(nextQ,D.missRow===0?2000:1200)};
   VO.play(timeout?'timeout':pick(['miss1','miss2','miss3']),true);
   if(Z.ready){Z.act('throw',{onRelease:()=>{sfx.fuse();sfx.whistle();const a=new T3.Vector3();Z.arms[1].userData.hand.getWorldPosition(a);
       const o=new T3.Group();o.add(new T3.Mesh(new T3.SphereGeometry(.3,18,12),new T3.MeshToonMaterial({color:0x1a1a22})));const fu=Z.glow(0xffb347,.6,1,o);fu.position.y=.35;
@@ -904,7 +1000,7 @@ function miss(timeout){
 }
 function phaseUp(){
   $('#qCard').classList.add('away');clearTimer();const P=PH[D.phase];
-  if(Z.ready){Z.rage=D.phase*.5;Z.act('jump');setTimeout(()=>{Z.act('roar');strike(true)},900)}
+  if(Z.ready){Z.rage=D.phase*.5;Z.act('jump');setTimeout(()=>{Z.act('roar');strike(true);fireCannon()},900)}
   MUS.setIntensity(D.phase===2?2:1);
   $('#duelUI').classList.toggle('rage',D.phase===2);renderHP();sfx.bigroar();
   setTimeout(()=>VO.play(D.phase===1?'phase2':'phase3',true),700);
@@ -913,7 +1009,7 @@ function phaseUp(){
   setTimeout(()=>{$('#bannerSlot').innerHTML='';if(!D.on)return;nextQ();$('#qCard').classList.remove('away')},2900);
 }
 function win(){
-  D.on=false;clearTimer();$('#qCard').classList.add('away');MUS.setIntensity(0);
+  D.on=false;clearTimer();$('#qCard').classList.add('away');MUS.setIntensity(0);$('#chestBtn').hidden=true;
   sfx.bigroar();VO.play('chest_lost',true);screenFlash('#fff',.7);
   if(Z.ready){Z.rage=0;Z.freeze=.15;Z.lidForce=1;sfx.treasure();
     const v=new T3.Vector3();Z.chest.getWorldPosition(v);
